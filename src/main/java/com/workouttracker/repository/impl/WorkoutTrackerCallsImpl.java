@@ -24,7 +24,7 @@ public class WorkoutTrackerCallsImpl implements WorkoutTrackerCalls{
     private ArrayList<String> fetchData(){
         ArrayList<String> muscleGroupList = new ArrayList<>();
 
-        /* ToDo: make don't show username and password in string. */
+        /* ToDo: don't show username and password in string. */
         String uri = "mongodb://admin:admin@wtmongo-shard-00-00-gorx0.mongodb.net:27017,wtmongo-shard-00-01-gorx0.mongodb.net:27017,wtmongo-shard-00-02-gorx0.mongodb.net:27017/admin?replicaSet=WTMongo-shard-0&ssl=true";
         MongoClientURI clientURI = new MongoClientURI(uri);
         MongoClient mongoClient = new MongoClient(clientURI);
